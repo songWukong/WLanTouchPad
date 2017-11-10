@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_width="match_parent" 
+	android:layout_height="match_parent" 
+	android:padding="16dp" 
+	android:orientation="vertical">
+	
+	<Button 
+		android:id="@+id/switchPC" 
+		android:layout_width="match_parent" 
+		android:layout_height="wrap_content"
+		android:text = "Show/Hide connect"
+		android:onClick = "switchComputer"
+	/>
+
+	<LinearLayout
+		android:layout_width="match_parent" 
+		android:layout_height="wrap_content"
+		android:layout_weight = "0">
+	
+		<EditText 
+			android:id="@+id/address" 
+			android:layout_width="match_parent" 
+			android:layout_height="wrap_content"  
+			android:hint="IP"
+			android:singleLine="true"/> 
+		
+		<EditText 
+			android:id="@+id/sendData" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:maxLength="2"/>
+	
+	</LinearLayout>
+	
+	<Button 
+		android:id="@+id/connect" 
+		android:layout_width="match_parent" 
+		android:layout_height="wrap_content" 
+		android:onClick = "onclick"
+		android:text="Connect"
+		android:layout_weight = "0"/>
+	
+	<TextView 
+		android:id="@+id/touchpad" 
+		android:layout_width="match_parent" 
+		android:layout_height="match_parent"
+		android:layout_weight = "1"/>
+		
+	<LinearLayout
+		android:layout_width="match_parent" 
+		android:layout_height="wrap_content"
+		android:layout_weight = "0">
+		
+		<Button 
+			android:id="@+id/left" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:onClick = "leftClick"
+			android:layout_weight = "1"/>
+		
+		<Button 
+			android:id="@+id/right" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:onClick = "rightClick"
+			android:layout_weight = "1"/>
+		
+		
+	</LinearLayout>	
+		
+	<Button 
+		android:id="@+id/keyboard" 
+		android:layout_width="match_parent" 
+		android:layout_height="wrap_content"
+		android:text = "Keyboard"
+		android:onClick = "keyBoard"
+	/>
+	
+</LinearLayout>
+
+<!--  -->
